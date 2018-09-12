@@ -1,6 +1,0 @@
-[package]
-name = "serialization_derive"
-version = "0.1.0"
-authors = ["sun <huachuang20@gmail.com>"]
-
-[dependencies]

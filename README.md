@@ -1,1 +1,5 @@
-### 开发文档
+# Fake Rust
+
+__abstract rust crates__
+
++ Rand

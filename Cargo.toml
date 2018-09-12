@@ -1,46 +1,6 @@
 [package]
-name = "tachion"
-version = "0.0.1"
-license = "GPL-3.0"
-authors = ["contact <contact@blockheaders.com>"]
-description = "tachion - A New DAG Blockchain"
+name = "fake-rust"
+version = "0.1.0"
+authors = ["mercury <udtrokia@gmail.com>"]
 
 [dependencies]
-log = "0.4"
-env_logger = "0.5"
-# app_dirs = "^1.1.1"
-# libc = "0.2"
-clap = { version = "2", features = ["yaml"] }
-event= { path = "event" }
-crypto= { path = "crypto" }
-network = { path = "network" }
-witness = { path = "witness" }
-p2p = { path = "p2p" }
-storage = { path = "storage" }
-db = { path = "db" }
-verification = { path = "verification" }
-sync = { path = "sync" }
-logs = { path = "logs" }
-rpc = { path = "rpc" }
-primitives = { path = "primitives" }
-
-[profile.dev]
-debug = true
-panic = 'abort'
-
-[profile.release]
-debug = true
-panic = 'abort'
-
-[profile.test]
-debug = true
-
-[profile.doc]
-debug = true
-
-[[bin]]
-path = "tachion/main.rs"
-name = "tachion"
-
-[workspace]
-members = ["bencher", "crypto", "rpc", "db"]
